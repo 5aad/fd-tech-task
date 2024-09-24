@@ -51,8 +51,12 @@ const Map: React.FC = () => {
       </Suspense>
       <div
         className={`fixed top-0 bottom-0 left-0 z-20 w-72 transform transition-transform duration-300 ease-in-out
-        ${isToggle ? "translate-x-0" : "-translate-x-72"}
-        sm:translate-x-0`}
+        ${
+          isToggle
+            ? "translate-x-0 sm:-translate-x-72"
+            : "-translate-x-72 sm:translate-x-0"
+        }
+        `}
       >
         <SidebarComponent locations={locationsData as Location[]} />
       </div>
