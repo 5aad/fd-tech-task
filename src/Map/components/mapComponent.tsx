@@ -9,8 +9,16 @@ import {
   LayersControl,
 } from "react-leaflet";
 import { MapComponentProps } from "../types";
+import L from "leaflet";
+import customMarker from "../../assets/location.png";
 const { BaseLayer } = LayersControl;
-
+const customIcon = new L.Icon({
+  iconUrl: customMarker,
+  iconSize: [41, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 const MapComponent: FC<MapComponentProps> = ({
   locations,
   center = [49.4333, 11.1111],
@@ -58,7 +66,11 @@ const MapComponent: FC<MapComponentProps> = ({
 
       {/* Show markers and their detail */}
       {locations.map((location) => (
-        <Marker key={location.id} position={location.coordinates}>
+        <Marker
+          key={location.id}
+          position={location.coordinates}
+          icon={customIcon}
+        >
           <Popup className="custom-popup">
             <div className="dark:text-white text-gray800">
               <strong className="text-secondary text-lg">
