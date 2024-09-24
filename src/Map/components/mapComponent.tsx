@@ -56,6 +56,14 @@ const MapComponent: FC<MapComponentProps> = ({
             url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg"
           />
         </BaseLayer>
+        
+        <BaseLayer name="OpenTopoMap">
+          <TileLayer
+            attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a> 
+      (CC-BY-SA)'
+            url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+          />
+        </BaseLayer>
       </LayersControl>
 
       {/* child components like flyToComponent */}
