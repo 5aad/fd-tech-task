@@ -19,7 +19,7 @@ const FlyToComponent: FC<FlyToComponentProps> = memo(
           </div>`,
           isLocation.coordinates,
           {
-            offset: [8, -28],
+            offset: [8, -33],
             className: "custom-popup",
           }
         );

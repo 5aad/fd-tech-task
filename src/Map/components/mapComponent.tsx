@@ -36,14 +36,14 @@ const MapComponent: FC<MapComponentProps> = ({
     >
       {/* layers toggle */}
       <LayersControl position="topright">
-        <BaseLayer checked name="OpenStreetMap">
+        <BaseLayer checked name="Open Street Map">
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
         </BaseLayer>
 
-        <BaseLayer name="OpenTopoMap">
+        <BaseLayer name="Open Topo Map">
           <TileLayer
             attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a> 
       (CC-BY-SA)'
@@ -80,7 +80,7 @@ const MapComponent: FC<MapComponentProps> = ({
           position={location.coordinates}
           icon={customIcon}
         >
-          <Popup className="custom-popup" offset={[7, 5]}>
+          <Popup className="custom-popup" offset={[7, 1]}>
             <div className="dark:text-white text-gray800">
               <strong className="text-secondary text-lg">
                 {location.name}
