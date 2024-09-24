@@ -1,0 +1,57 @@
+/* Add to your global CSS or Tailwind configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-popup .leaflet-popup-tip {
+  @apply dark:bg-gray900 bg-gray-50;
+}
+.custom-popup .leaflet-popup-content-wrapper {
+  @apply dark:bg-gray900 bg-gray-50;
+}
+
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+.leaflet-control-zoom-in {
+  @apply dark:bg-gray900 dark:text-white;
+  border-start-end-radius: 6px !important;
+  border-start-start-radius: 6px !important;
+}
+.leaflet-control-zoom-out {
+  @apply dark:bg-gray900 dark:text-white;
+  border-end-end-radius: 6px !important;
+  border-end-start-radius: 6px !important;
+}
+
+.leaflet-control-layers-expanded {
+  @apply dark:bg-gray900 dark:text-white;
+}
+.leaflet-control-layers-toggle {
+  @apply dark:bg-gray900;
+  border-radius: 6px;
+}
+
+.leaflet-control-zoom-in:hover {
+  @apply dark:bg-gray800;
+}
+
+.leaflet-control-zoom-out:hover {
+  @apply dark:bg-gray800;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.scrollbar-thumb-rounded:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.7);
+}

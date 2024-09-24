@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Nuremberg Castle (Kaiserburg)",
+      "description": "A historic castle complex offering panoramic views of the city.",
+      "coordinates": [49.4542, 11.0775]
+    },
+    {
+      "id": 2,
+      "name": "Documentation Center Nazi Party Rally Grounds",
+      "description": "A museum and memorial documenting the history of the Nazi regime.",
+      "coordinates": [49.4333, 11.1111]
+    },
+    {
+      "id": 3,
+      "name": "St. Lorenz Church",
+      "description": "A stunning Gothic church known for its impressive architecture and art.",
+      "coordinates": [49.4473, 11.0720]
+    },
+    {
+      "id": 4,
+      "name": "Germanisches Nationalmuseum",
+      "description": "The largest museum of cultural history in the German-speaking world.",
+      "coordinates": [49.4523, 11.0750]
+    },
+    {
+      "id": 5,
+      "name": "Hauptmarkt and Schöner Brunnen",
+      "description": "The central market square featuring the beautiful Schöner Brunnen fountain.",
+      "coordinates": [49.4509, 11.0753]
+    },
+    {
+      "id": 6,
+      "name": "Albrecht Dürer's House",
+      "description": "The former residence of the famous Renaissance artist Albrecht Dürer, now a museum.",
+      "coordinates": [49.4502, 11.0694]
+    },
+    {
+      "id": 7,
+      "name": "Nuremberg Zoo (Tiergarten Nürnberg)",
+      "description": "A well-maintained zoo home to a wide variety of animals and beautiful gardens.",
+      "coordinates": [49.4319, 11.1617]
+    },
+    {
+      "id": 8,
+      "name": "Frauenkirche",
+      "description": "A historic church known for its unique architecture and rich history.",
+      "coordinates": [49.4483, 11.0767]
+    },
+    {
+      "id": 9,
+      "name": "Toy Museum (Spielzeugmuseum)",
+      "description": "A museum showcasing a vast collection of toys from different eras.",
+      "coordinates": [49.4497, 11.0733]
+    },
+    {
+      "id": 10,
+      "name": "Handwerkerhof",
+      "description": "A charming craftsmen’s courtyard featuring traditional Bavarian shops and eateries.",
+      "coordinates": [49.4501, 11.0755]
+    }
+  ]
+  
