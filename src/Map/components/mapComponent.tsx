@@ -36,14 +36,14 @@ const MapComponent: FC<MapComponentProps> = ({
     >
       {/* layers toggle */}
       <LayersControl position="topright">
-        <BaseLayer checked name="OpenStreetMap (dev, prod)">
+        <BaseLayer checked name="OpenStreetMap">
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
         </BaseLayer>
 
-        <BaseLayer name="OpenTopoMap (dev, prod)">
+        <BaseLayer name="OpenTopoMap">
           <TileLayer
             attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a> 
       (CC-BY-SA)'
@@ -51,7 +51,8 @@ const MapComponent: FC<MapComponentProps> = ({
           />
         </BaseLayer>
 
-        <BaseLayer name="OpenStreetMap Black & White (dev) ">
+        {/* They aren't available for production; they can only work on development. */}
+        {/* <BaseLayer name="OpenStreetMap Black & White (dev) ">
           <TileLayer
             attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
@@ -63,7 +64,7 @@ const MapComponent: FC<MapComponentProps> = ({
             attribution='&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg"
           />
-        </BaseLayer>
+        </BaseLayer> */}
       </LayersControl>
 
       {/* child components like flyToComponent */}
@@ -79,7 +80,7 @@ const MapComponent: FC<MapComponentProps> = ({
           position={location.coordinates}
           icon={customIcon}
         >
-          <Popup className="custom-popup">
+          <Popup className="custom-popup" offset={[7, 5]}>
             <div className="dark:text-white text-gray800">
               <strong className="text-secondary text-lg">
                 {location.name}
