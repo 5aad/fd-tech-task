@@ -55,10 +55,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-    
-      - name: Install Netlify CLI
-        run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
         run: |
-          netlify deploy --prod --dir=./dist --site ${{ secrets.NETLIFY_SITE_ID }}
+          curl -X POST -d '{}' ${{ secrets.NETLIFY_BUILD_HOOK }}
